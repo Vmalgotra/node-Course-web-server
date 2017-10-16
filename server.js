@@ -59,12 +59,18 @@ app.get('/about', (request,response) => {
         message: 'Welcome to AboutPage'
       });   });
 
+app.get('/project', (request,response) => {
+        response.render('project.hbs', {
+      pageTitle: 'ProjectPage',
+      message: 'Welcome to ProjectPage'
+    });   });
+
     app.get('/bad', (request,response) => {
         
-        response.send({
-            error: 'error',
-           
-        });
+        response.render('project.hbs', {
+            pageTitle: 'ProjectPage',
+            message: 'Welcome to ProjectPage'
+          }); 
     
         });
 
