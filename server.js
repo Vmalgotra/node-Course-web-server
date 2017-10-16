@@ -60,6 +60,7 @@ app.get('/about', (request,response) => {
       });   });
 
 app.get('/project', (request,response) => {
+    //response.send('<h1>Hello Express!<hi>');
         response.render('project.hbs', {
       pageTitle: 'ProjectPage',
       message: 'Welcome to ProjectPage'
